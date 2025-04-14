@@ -1,0 +1,60 @@
+# Project information
+site_name: Coding
+site_author: Reddy
+site_description: >-
+  Developer documentation for <your project>. 
+
+# Repository
+repo_name: mkdocs-material-template
+repo_url: ssh://git@github.com:REDDY50N/mkdocs-material-template.git
+
+
+# Copyright
+copyright: Copyright &copy; 2025 Suria Reddy
+
+# Configuration:
+theme:
+  name: material #readthedocs  #mkdocs
+  icon:
+    #logo: material/file-document-multiple
+    #logo: images/tux.png
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - toc.integrate
+  - navigation.top
+  - search.highlight
+  - search.suggest
+  language: en
+  palette:
+    # Palette toggle for light mode
+    - scheme: dark-blue
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo 
+      accent: orange
+    # Palette toggle for dark mode 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: kiss-red
+      accent: dark-blue
+
+# Custom Colors etc
+extra_css:
+  - stylesheets/extra.css
+
+# Plugins & Extensions
+plugins:
+  - git-revision-date
+  - search
+
+markdown_extensions:
+  - admonition
+
+# Page tree:
+#nav:
+#    - Home: index.md
+#    - Develop: 
